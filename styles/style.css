@@ -482,3 +482,25 @@ a:visited {
     background: var(--errorBgColor);
     border: var(--errorBorder);
 }
+#main_content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+#left_panel {
+  width: 300px;
+  flex-shrink: 0;
+  max-height: 600px;
+  overflow-y: auto;
+  border-right: var(--strongBorder);
+  padding-right: 10px;
+}
+
+#result_body {
+  flex-grow: 1;
+  max-height: 600px;
+  overflow-y: auto;
+}
