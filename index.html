@@ -5,20 +5,20 @@
   <title>SurVis Literature Collection</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- CDN -->
+  <!-- External Libraries -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.15.1/d3.min.js"></script>
 
-  <!-- Local JS -->
+  <!-- Local JS Libraries -->
   <script src="js/lib/bibtex_js.js"></script>
   <script src="js/lib/FileSaver.js"></script>
   <script src="js/lib/codemirror.js"></script>
   <script src="js/lib/jquery.tooltipster.js"></script>
   <script src="js/lib/figue.js"></script>
 
-  <!-- Data -->
+  <!-- Data Files -->
   <script src="data/generated/bib.js"></script>
   <script src="data/generated/available_pdf.js"></script>
   <script src="data/generated/available_img.js"></script>
@@ -51,35 +51,7 @@
 </head>
 
 <body>
-  <div id="page-container">
-    <div id="header">
-      <div id="title">
-        <h1><a href="">SurVis Literature Collection</a></h1>
-        <div id="search">
-          <input id="search_input" type="text" placeholder="search ..." />
-          <button onclick="search()">search</button>
-        </div>
-      </div>
-    </div>
-
-    <div id="control">
-      <div id="selectors_container"></div>
-    </div>
-
-    <div id="result">
-      <div id="result_header">
-        <span id="stats"></span>
-        <span id="sorting_description"></span>
-      </div>
-      <div id="result_body"></div>
-    </div>
-
-    <div id="footer">
-      <div id="menu"></div>
-      <div id="extra_pages_list"></div>
-    </div>
-  </div>
-
+  <div id="page-container"></div>
   <div id="notifications"></div>
 
   <script>
