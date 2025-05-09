@@ -53,22 +53,40 @@
 </head>
 
 <body>
-  <div id="main">
-    <div id="header_container">
-      <div id="title_container">
-        <span class="title"><a href="">SurVis</a></span>
-        <span class="subtitle">Literature Collection</span>
+  <div id="page-container">
+    <div id="header">
+      <div id="title">
+        <h1><a href="">SurVis Literature Collection</a></h1>
+        <div id="search">
+          <input id="search_input" type="text" placeholder="search ..." />
+          <button onclick="search()">search</button>
+        </div>
       </div>
     </div>
-    <div id="selectors_container"></div>
-    <div id="main_content">
-      <div id="left_panel"></div>
+
+    <div id="control">
+      <div id="selectors_container"></div>
+    </div>
+
+    <div id="result">
+      <div id="result_header">
+        <span id="stats"></span>
+        <span id="sorting_description"></span>
+      </div>
       <div id="result_body"></div>
     </div>
-    <div id="footer"></div>
+
+    <div id="footer">
+      <div id="menu"></div>
+      <div id="extra_pages_list"></div>
+    </div>
   </div>
 
-  <script>page.init();</script>
+  <div id="notifications"></div>
+
+  <script>
+    page.init();
+  </script>
 </body>
 
 </html>
