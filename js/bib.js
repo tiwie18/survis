@@ -1,3 +1,4 @@
+const electron = typeof require !== 'undefined' && typeof window.process === 'object';
 const bib = (function () {
 
     var entries = readBibtex();
