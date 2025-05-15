@@ -51,4 +51,8 @@ svg:not(:root) {
     position: relative;
     top: -2px;
 }
+#timeline .bar {
+    background-color: #4caf50; /* hijau */
+    border-radius: 2px;
+}
 
